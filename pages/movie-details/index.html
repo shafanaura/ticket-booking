@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+			crossorigin="anonymous"
+		/>
+		<!-- Font Awesome -->
+		<link
+			href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+			rel="stylesheet"
+		/>
+		<!-- Css -->
+		<link rel="stylesheet" href="../../css/custom-theme.css" />
+		<link rel="stylesheet" href="../../css/typography.css" />
+		<link rel="stylesheet" href="./movie-details.css" />
+		<!-- Jquery datepicker -->
+		<link
+			rel="stylesheet"
+			href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+		/>
+		<link rel="stylesheet" href="/resources/demos/style.css" />
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+		<title>Movie details</title>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Navbar begin -->
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img
+							src="../../assets/tickitz-purple.svg"
+							class="img-fluid col-9 col-md-12"
+						/>
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<!-- Left nav -->
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#"
+									>Movies</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#"
+									>Cinemas</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#"
+									>Buy Ticket</a
+								>
+							</li>
+						</ul>
+						<!-- Right nav -->
+						<ul class="navbar-nav justify-content-end">
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									data-bs-toggle="dropdown"
+									href="#"
+									role="button"
+									aria-expanded="false"
+									>Location</a
+								>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Jakarta</a></li>
+									<li><a class="dropdown-item" href="#">Bandung</a></li>
+									<li><a class="dropdown-item" href="#">Surabaya</a></li>
+								</ul>
+							</li>
+							<li class="nav-item d-none d-lg-block">
+								<a class="nav-link" href="#">
+									<i class="fas fa-search"></i>
+								</a>
+							</li>
+							<li class="nav-item d-lg-none">
+								<form class="d-flex">
+									<input
+										class="form-control me-2"
+										type="search"
+										placeholder="Search"
+										aria-label="Search"
+									/>
+								</form>
+							</li>
+							<li class="nav-item d-none d-lg-block">
+								<img
+									src="https://cachedimages.podchaser.com/256x256/aHR0cHM6Ly9jcmVhdG9yLWltYWdlcy5wb2RjaGFzZXIuY29tL2EyYjc4MGQxNGU0ODhhMTdjZjhiZTQyYWU3MjZmNWUzLmpwZWc%3D/aHR0cHM6Ly93d3cucG9kY2hhc2VyLmNvbS9pbWFnZXMvbWlzc2luZy1pbWFnZS5wbmc%3D"
+									class="rounded-circle img-resize"
+									width="45px"
+								/>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- Navbar End -->
+
+			<!-- Content begin -->
+			<!-- Image -->
+			<div class="row" style="padding: 40px 0">
+				<div class="col-12 col-md-4">
+					<div class="wrapper">
+						<div class="card mx-auto">
+							<div class="card-body">
+								<a href="../movie-details/"
+									><img
+										src="https://picfiles.alphacoders.com/148/148651.jpg"
+										class="img-fluid img-resize"
+								/></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Details -->
+				<div class="col-12 col-md-8">
+					<p class="text-display-sm-bold m-0">Spider-Man: Homecoming</p>
+					<p class="text-md text-color-body">Adventure, Action, Sci-Fi</p>
+					<div class="row row-cols-4 pt-2">
+						<div class="col-6 col-lg-4">
+							<div class="flex-column justify-content-center d-flex">
+								<p class="text-xs text-muted m-0">Release date</p>
+								<p class="text-sm pt-1">June 28, 2017</p>
+							</div>
+						</div>
+						<div class="col-6 col-lg-8">
+							<div class="flex-column justify-content-center d-flex">
+								<p class="text-xs text-muted m-0">Directed by</p>
+								<p class="text-sm pt-1">Jon Watss</p>
+							</div>
+						</div>
+					</div>
+					<div class="row row-cols-4 pt-2">
+						<div class="col-6 col-lg-4">
+							<div class="flex-column justify-content-center d-flex">
+								<p class="text-xs text-muted m-0">Duration</p>
+								<p class="text-sm pt-1">2 hours 13 minutes</p>
+							</div>
+						</div>
+						<div class="col-6 col-lg-8">
+							<div class="flex-column justify-content-center d-flex">
+								<p class="text-xs text-muted m-0">Casts</p>
+								<p class="text-sm pt-1">
+									Tom Holland, Michael Keaton, Robert Downey Jr., ...
+								</p>
+							</div>
+						</div>
+					</div>
+					<hr class="text-muted" />
+					<p class="text-link-lg-20">Sinopsis</p>
+					<p class="text-sm text-color-body">
+						Thrilled by his experience with the Avengers, Peter returns home,
+						where he lives with his Aunt May, under the watchful eye of his new
+						mentor Tony Stark, Peter tries to fall back into his normal daily
+						routine - distracted by thoughts of proving himself to be more than
+						just your friendly neighborhood Spider-Man - but when the Vulture
+						emerges as a new villain, everything that Peter holds most important
+						will be threatened.
+					</p>
+				</div>
+			</div>
+
+			<!-- Showtimes -->
+
+			<div class="text-center py-5">
+				<p class="text-display-xs-bold text-color-title">
+					Showtimes and Tickets
+				</p>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="d-grid col-sm-5 col-md-4 col-lg-3 pt-4">
+							<div class="input-group pt-4">
+								<span
+									class="input-group-text"
+									id="basic-addon1"
+									style="background-color: none"
+								>
+									<img src="../../assets/calendar.svg" width="20px" alt="" />
+								</span>
+								<input
+									class="form-select btn btn-light-grey text-left"
+									id="datepicker"
+									value="21/12/2021"
+								/>
+							</div>
+						</div>
+
+						<div class="d-grid col-sm-5 col-md-4 col-lg-3 pt-4">
+							<div class="input-group pt-4">
+								<span
+									class="input-group-text"
+									id="basic-addon1"
+									style="background-color: none"
+								>
+									<img src="../../assets/map.svg" alt="" />
+								</span>
+								<select
+									class="form-select btn btn-light-grey"
+									aria-label="Default select example"
+								>
+									<option selected>Purwokerto</option>
+									<option value="1">Jakarta</option>
+									<option value="2">Bandung</option>
+									<option value="3">Surabaya</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Movie schedule begin -->
+			<!-- col 1 -->
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+				<div class="pt-4 col">
+					<div class="card card-movie border-0">
+						<div class="card-body pb-0">
+							<div class="float-left wrapper-logo">
+								<img src="../../assets/ebu.png" width="100px" alt="" />
+							</div>
+							<p class="card-title m-0">ebv.id</p>
+							<p class="card-text m-0">
+								Whatever street No.12, South Purwokerto
+							</p>
+						</div>
+						<hr style="height: 0px" />
+						<div class="card-body row row-cols-4">
+							<p class="col time">08:30am</p>
+							<p class="col time">10:30pm</p>
+							<p class="col time text-muted">12:00pm</p>
+							<p class="col time">12:00pm</p>
+							<p class="col time">04:30pm</p>
+							<p class="col time text-muted">07:00pm</p>
+							<p class="col time">08:30pm</p>
+						</div>
+						<div class="card-body pt-0 pb-2">
+							<h6 class="float-left text-sm text-color-body">Price</h6>
+							<p class="float-right text-link-sm">$10.00/seat</p>
+						</div>
+						<div class="card-body pt-0 d-flex justify-content-between">
+							<a href="#" class="col-5 btn btn-primary shadow">Book now</a>
+							<a href="#" class="col-5 btn btn-light text-primary"
+								>Add to cart</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="pt-4 col">
+					<div class="card card-movie border-0">
+						<div class="card-body pb-0">
+							<div class="float-left wrapper-logo">
+								<img src="../../assets/cineone.png" width="115px" alt="" />
+							</div>
+							<p class="card-title m-0">CineOne21</p>
+							<p class="card-text m-0">
+								Downcare street No. 21, East Purwokerto
+							</p>
+						</div>
+						<hr style="height: 0px" />
+						<div class="card-body row row-cols-4">
+							<p class="col time">08:30am</p>
+							<p class="col time">10:30pm</p>
+							<p class="col time text-muted">12:00pm</p>
+							<p class="col time">12:00pm</p>
+							<p class="col time">04:30pm</p>
+							<p class="col time text-muted">07:00pm</p>
+							<p class="col time">08:30pm</p>
+						</div>
+						<div class="card-body pt-0 pb-2">
+							<h6 class="float-left text-sm text-color-body">Price</h6>
+							<p class="float-right text-link-sm">$10.00/seat</p>
+						</div>
+						<div class="card-body pt-0 d-flex justify-content-between">
+							<a href="../order-page/" class="col-5 btn btn-primary shadow"
+								>Book now</a
+							>
+							<a href="#" class="col-5 btn btn-light text-primary"
+								>Add to cart</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="pt-4 col">
+					<div class="card card-movie border-0">
+						<div class="card-body pb-0">
+							<div class="float-left wrapper-logo">
+								<img src="../../assets/hiflix.png" width="110px" alt="" />
+							</div>
+							<p class="card-title m-0">hiflix Cinema</p>
+							<p class="card-text m-0">Colonel street No. 2, East Purwokerto</p>
+						</div>
+						<hr style="height: 0px" />
+						<div class="card-body row row-cols-4">
+							<p class="col time">08:30am</p>
+							<p class="col time">10:30pm</p>
+							<p class="col time text-muted">12:00pm</p>
+							<p class="col time">12:00pm</p>
+							<p class="col time">04:30pm</p>
+							<p class="col time text-muted">07:00pm</p>
+							<p class="col time">08:30pm</p>
+						</div>
+						<div class="card-body pt-0 pb-2">
+							<h6 class="float-left text-sm text-color-body">Price</h6>
+							<p class="float-right text-link-sm">$10.00/seat</p>
+						</div>
+						<div class="card-body pt-0 d-flex justify-content-between">
+							<a href="#" class="col-5 btn btn-primary shadow">Book now</a>
+							<a href="#" class="col-5 btn btn-light text-primary"
+								>Add to cart</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="pt-4 col d-none d-sm-block">
+					<div class="card card-movie border-0">
+						<div class="card-body pb-0">
+							<div class="float-left wrapper-logo">
+								<img src="../../assets/ebu.png" width="100px" alt="" />
+							</div>
+							<p class="card-title m-0">ebv.id</p>
+							<p class="card-text m-0">
+								Whatever street No.12, South Purwokerto
+							</p>
+						</div>
+						<hr style="height: 0px" />
+						<div class="card-body row row-cols-4">
+							<p class="col time">08:30am</p>
+							<p class="col time">10:30pm</p>
+							<p class="col time text-muted">12:00pm</p>
+							<p class="col time">12:00pm</p>
+							<p class="col time">04:30pm</p>
+							<p class="col time text-muted">07:00pm</p>
+							<p class="col time">08:30pm</p>
+						</div>
+						<div class="card-body pt-0 pb-2">
+							<h6 class="float-left text-sm text-color-body">Price</h6>
+							<p class="float-right text-link-sm">$10.00/seat</p>
+						</div>
+						<div class="card-body pt-0 d-flex justify-content-between">
+							<a href="#" class="col-5 btn btn-primary shadow">Book now</a>
+							<a href="#" class="col-5 btn btn-light text-primary"
+								>Add to cart</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="pt-4 col d-none d-sm-block">
+					<div class="card card-movie border-0">
+						<div class="card-body pb-0">
+							<div class="float-left wrapper-logo">
+								<img src="../../assets/cineone.png" width="115px" alt="" />
+							</div>
+							<p class="card-title m-0">CineOne21</p>
+							<p class="card-text m-0">
+								Downcare street No. 21, East Purwokerto
+							</p>
+						</div>
+						<hr style="height: 0px" />
+						<div class="card-body row row-cols-4">
+							<p class="col time">08:30am</p>
+							<p class="col time">10:30pm</p>
+							<p class="col time text-muted">12:00pm</p>
+							<p class="col time">12:00pm</p>
+							<p class="col time">04:30pm</p>
+							<p class="col time text-muted">07:00pm</p>
+							<p class="col time">08:30pm</p>
+						</div>
+						<div class="card-body pt-0 pb-2">
+							<h6 class="float-left text-sm text-color-body">Price</h6>
+							<p class="float-right text-link-sm">$10.00/seat</p>
+						</div>
+						<div class="card-body pt-0 d-flex justify-content-between">
+							<a href="#" class="col-5 btn btn-primary shadow">Book now</a>
+							<a href="#" class="col-5 btn btn-light text-primary"
+								>Add to cart</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="pt-4 col d-none d-sm-block">
+					<div class="card card-movie border-0">
+						<div class="card-body pb-0">
+							<div class="float-left wrapper-logo">
+								<img src="../../assets/hiflix.png" width="110px" alt="" />
+							</div>
+							<p class="card-title m-0">hiflix Cinema</p>
+							<p class="card-text m-0">Colonel street No. 2, East Purwokerto</p>
+						</div>
+						<hr style="height: 0px" />
+						<div class="card-body row row-cols-4">
+							<p class="col time">08:30am</p>
+							<p class="col time">10:30pm</p>
+							<p class="col time text-muted">12:00pm</p>
+							<p class="col time">12:00pm</p>
+							<p class="col time">04:30pm</p>
+							<p class="col time text-muted">07:00pm</p>
+							<p class="col time">08:30pm</p>
+						</div>
+						<div class="card-body pt-0 pb-2">
+							<h6 class="float-left text-sm text-color-body">Price</h6>
+							<p class="float-right text-link-sm">$10.00/seat</p>
+						</div>
+						<div class="card-body pt-0 d-flex justify-content-between">
+							<a href="#" class="col-5 btn btn-primary shadow">Book now</a>
+							<a href="#" class="col-5 btn btn-light text-primary"
+								>Add to cart</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Movie schedule end -->
+			<!-- Pagination -->
+			<div class="d-flex justify-content-between align-items-center pt-4 pb-2">
+				<div class="col-md-5 col-4"><hr /></div>
+				<a href="#" class="col-lg-1 col-sm-3 col-md-2 text-center">view more</a>
+				<div class="col-md-5 col-4"><hr /></div>
+			</div>
+			<!-- Footer page begin -->
+			<footer>
+				<div class="container py-5">
+					<div class="row py-3 g-5">
+						<div class="col-lg-4 col-md-6 mb-lg-0">
+							<img src="../../assets/tickitz-purple.png" width="170px" />
+							<p class="text-sm text-color-label mt-3">
+								Stop waiting in line. Buy tickets conveniently, watch movies
+								quietly.
+							</p>
+						</div>
+						<div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+							<h6 class="text-display-xs-bold-16 mb-4">Explore</h6>
+							<ul class="list-unstyled mb-0">
+								<li class="mb-2">
+									<a href="#" class="text-muted">Cinemas</a>
+								</li>
+								<li class="mb-2">
+									<a href="#" class="text-muted">Movies List</a>
+								</li>
+								<li class="mb-2">
+									<a href="#" class="text-muted">My Ticket</a>
+								</li>
+								<li class="mb-2">
+									<a href="#" class="text-muted">Notification</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+							<h6 class="text-display-xs-bold-16 mb-4">Our Sponsor</h6>
+							<ul class="list-unstyled mb-0">
+								<li class="mb-3">
+									<a href="#" class="text-muted"
+										><img src="../../assets/ebu.png" height="44px"
+									/></a>
+								</li>
+								<li class="mb-3">
+									<a href="#" class="text-muted"
+										><img src="../../assets/cineone.png" height="27px"
+									/></a>
+								</li>
+								<li class="mb-3">
+									<a href="#" class="text-muted"
+										><img src="../../assets/hiflix.png" height="25px"
+									/></a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+							<h6 class="text-display-xs-bold-16 mb-4">Follow us</h6>
+							<ul class="list-unstyled mb-0">
+								<li class="mb-4">
+									<div class="float-left mr-3">
+										<img
+											src="../../assets/facebook.svg"
+											class="img-fluid"
+											height="20px"
+										/>
+									</div>
+									<div class="d-none d-lg-block">
+										<a href="#" class="text-muted">Tickitz Cinema id</a>
+									</div>
+								</li>
+								<li class="mb-4">
+									<div class="float-left mr-3">
+										<img
+											src="../../assets/instagram.svg"
+											class="img-fluid"
+											height="20px"
+										/>
+									</div>
+									<div class="d-none d-lg-block">
+										<a href="#" class="text-muted">tickitz.id</a>
+									</div>
+								</li>
+								<li class="mb-4">
+									<div class="float-left mr-3">
+										<img
+											src="../../assets/twitter.svg"
+											class="img-fluid"
+											height="20px"
+										/>
+									</div>
+									<div class="d-none d-lg-block">
+										<a href="#" class="text-muted">tickitz.id</a>
+									</div>
+								</li>
+								<li class="mb-4">
+									<div class="float-left mr-3">
+										<img
+											src="../../assets/youtube.svg"
+											class="img-fluid"
+											height="20px"
+										/>
+									</div>
+									<div class="d-none d-lg-block">
+										<a href="#" class="text-muted">Tickitz Cinema id</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="py-2">
+					<div class="container text-center">
+						<p class="text-muted mb-0 py-2">
+							&copy; 2020 Tickitz. All Rights Reserved.
+						</p>
+					</div>
+				</div>
+			</footer>
+			<!-- Footer page end -->
+			<!-- Content end -->
+		</div>
+	</body>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+		crossorigin="anonymous"
+	></script>
+	<script>
+		$(function () {
+			$("#datepicker").datepicker();
+		});
+	</script>
+</html>

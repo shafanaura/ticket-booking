@@ -1,0 +1,33 @@
+.btn {
+	border-radius: 8px;
+}
+.nav-item {
+	margin-left: 40px;
+}
+hr {
+	opacity: 10%;
+}
+.navbar-dark {
+	border-radius: 0px 0px 25px 25px;
+	height: 70px;
+}
+.bg-gray {
+	background-color: rgb(245, 245, 245);
+}
+.card {
+	border-radius: 24px;
+}
+.line-screen {
+	height: 8px;
+	background: #9570fe;
+	border-radius: 8px;
+}
+.opacity-80 {
+	opacity: 80%;
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+}
+@media (max-width: 575.98px) {
+}

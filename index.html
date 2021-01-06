@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+			crossorigin="anonymous"
+		/>
+		<!-- Font Awesome -->
+		<link
+			href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+			rel="stylesheet"
+		/>
+		<!-- Css -->
+		<link rel="stylesheet" href="./css/custom-theme.css" />
+		<link rel="stylesheet" href="./css/typography.css" />
+		<link rel="stylesheet" href="./home-page.css" />
+		<title>Home Page</title>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Navbar begin -->
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img
+							src="../../assets/tickitz-purple.svg"
+							class="img-fluid col-9 col-md-12"
+						/>
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<!-- Left nav -->
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#"
+									>Movies</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#"
+									>Cinemas</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#"
+									>Buy Ticket</a
+								>
+							</li>
+						</ul>
+						<!-- Right nav -->
+						<ul class="navbar-nav justify-content-end">
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									data-bs-toggle="dropdown"
+									href="#"
+									role="button"
+									aria-expanded="false"
+									>Location</a
+								>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Jakarta</a></li>
+									<li><a class="dropdown-item" href="#">Bandung</a></li>
+									<li><a class="dropdown-item" href="#">Surabaya</a></li>
+								</ul>
+							</li>
+							<li class="nav-item d-none d-lg-block">
+								<a class="nav-link" href="#">
+									<i class="fas fa-search"></i>
+								</a>
+							</li>
+							<li class="nav-item d-lg-none">
+								<form class="d-flex">
+									<input
+										class="form-control me-2"
+										type="search"
+										placeholder="Search"
+										aria-label="Search"
+									/>
+								</form>
+							</li>
+							<li class="nav-item">
+								<a href="./pages/sign-up" class="btn btn-primary">Sign up</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- Navbar End -->
+
+			<!-- Content begin -->
+			<div class="row" style="padding-bottom: 100px">
+				<div
+					class="col-md-6 col-sm-12 flex-column justify-content-center d-flex"
+				>
+					<!-- left side begin -->
+					<p class="text-color-placeholder text-display-xs m-0">
+						Nearest Cinema, Newest Movie,
+					</p>
+					<p class="text-display-lg-bold-56 text-primary m-0">Find out now!</p>
+					<!-- left side end -->
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<!-- Right side image begin -->
+					<div class="row row-cols-md-3 row-cols-lg-4">
+						<div class="col" style="padding-top: 120px">
+							<div class="img-gradient">
+								<img
+									src="https://wallpapercave.com/wp/wp1816326.jpg"
+									class="img-fluid"
+								/>
+							</div>
+						</div>
+						<div class="col" style="padding-top: 80px">
+							<div class="img-gradient">
+								<img
+									src="https://static01.nyt.com/images/2020/02/05/multimedia/05xp-lionking/merlin_165677088_8820db00-d13c-4f15-a5a4-be78b888c5b6-jumbo.jpg?quality=90&auto=webp"
+									class="img-fluid img-heading"
+								/>
+							</div>
+						</div>
+						<div class="col" style="padding-top: 40px">
+							<div class="img-gradient">
+								<img
+									src="https://wallpapercave.com/wp/wp3703396.jpg"
+									class="img-fluid img-heading"
+								/>
+							</div>
+						</div>
+					</div>
+					<!-- Right side image end -->
+				</div>
+			</div>
+
+			<!-- Scroll 2 page begin -->
+			<!-- Now Showing Heading -->
+			<div class="row justify-content-between">
+				<div class="col">
+					<p class="heading float-start fw-bold fs-5">Now Showing</p>
+				</div>
+				<div class="col">
+					<a href="#" class="text-primary float-end">view all</a>
+				</div>
+			</div>
+			<!-- Movie coming list begin -->
+			<div class="scrollmenu g-4 py-4 text-center">
+				<div class="scroll card mr-4">
+					<div class="card-body">
+						<a href="./pages/movie-details/"
+							><img
+								src="https://picfiles.alphacoders.com/148/148651.jpg"
+								class="img-fluid img-resize"
+						/></a>
+					</div>
+				</div>
+
+				<div class="scroll card mr-4">
+					<div class="card-body">
+						<img
+							src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1578966738/raoe3irv9nfyw5tpsmww.png"
+							class="img-fluid img-resize"
+						/>
+					</div>
+				</div>
+
+				<div class="scroll card mr-4">
+					<div class="card-body">
+						<img
+							src="https://risetcdn.jatimtimes.com/images/2019/04/26/End-Game-Bukan-Berakhir-Ini-Deretan-8-Film-yang-Sudah-dan-Akan-Diprosuksi-Marvel923534554192802b.jpg"
+							class="img-fluid img-resize"
+						/>
+					</div>
+				</div>
+
+				<div class="scroll card mr-4">
+					<div class="card-body">
+						<img
+							src="https://lumiere-a.akamaihd.net/v1/images/mazerunnerdeathcure_feature-poster_584x800_62521e27.jpeg?region=0,0,584,800"
+							class="img-fluid img-resize"
+						/>
+					</div>
+				</div>
+
+				<div class="scroll card mr-4">
+					<div class="card-body">
+						<img
+							src="https://m.media-amazon.com/images/M/MV5BNThkYmNmYzAtOGI2Ny00ODI4LTgwY2MtZmY3YWMxYTUyYjVjXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg"
+							class="img-fluid img-resize"
+						/>
+					</div>
+				</div>
+
+				<div class="scroll card mr-4">
+					<div class="card-body">
+						<img
+							src="https://risetcdn.jatimtimes.com/images/2019/04/26/End-Game-Bukan-Berakhir-Ini-Deretan-8-Film-yang-Sudah-dan-Akan-Diprosuksi-Marvel923534554192802b.jpg"
+							class="img-fluid img-resize"
+						/>
+					</div>
+				</div>
+
+				<div class="scroll card mr-4">
+					<div class="card-body">
+						<img
+							src="https://lumiere-a.akamaihd.net/v1/images/mazerunnerdeathcure_feature-poster_584x800_62521e27.jpeg?region=0,0,584,800"
+							class="img-fluid img-resize"
+						/>
+					</div>
+				</div>
+
+				<div class="scroll card mr-4">
+					<div class="card-body">
+						<img
+							src="https://m.media-amazon.com/images/M/MV5BNThkYmNmYzAtOGI2Ny00ODI4LTgwY2MtZmY3YWMxYTUyYjVjXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg"
+							class="img-fluid img-resize"
+						/>
+					</div>
+				</div>
+			</div>
+			<!-- Movie coming list end -->
+			<!-- Scroll 2 page end -->
+
+			<!-- Scroll 3 page begin -->
+			<!-- Upcoming movies Heading -->
+			<div class="row justify-content-between pt-5">
+				<div class="col">
+					<p class="fw-bold fs-5 float-start">Upcoming Movies</p>
+				</div>
+				<div class="col">
+					<a href="#" class="text-primary float-end">view all</a>
+				</div>
+			</div>
+			<!-- Button month -->
+			<div class="scrollmenu g-4 py-4">
+				<a href="#" class="scroll btn btn-primary">September</a>
+				<a href="#" class="scroll btn btn-outline-primary">October</a>
+				<a href="#" class="scroll btn btn-outline-primary">November</a>
+				<a href="#" class="scroll btn btn-outline-primary">December</a>
+				<a href="#" class="scroll btn btn-outline-primary">January</a>
+				<a href="#" class="scroll btn btn-outline-primary">February</a>
+				<a href="#" class="scroll btn btn-outline-primary">March</a>
+				<a href="#" class="scroll btn btn-outline-primary">April</a>
+				<a href="#" class="scroll btn btn-outline-primary">May</a>
+				<a href="#" class="scroll btn btn-outline-primary">June</a>
+				<a href="#" class="scroll btn btn-outline-primary">July</a>
+				<a href="#" class="scroll btn btn-outline-primary">August</a>
+			</div>
+
+			<!-- Upcoming movie begin -->
+			<div class="scrollmenu g-4 py-4 text-center">
+				<div class="scroll card mr-4">
+					<div class="card-body">
+						<img
+							src="https://pbs.twimg.com/media/EPKOTsOX0AAaYeN.jpg"
+							class="img-fluid img-resize"
+						/>
+						<h5 class="pt-3 pb-2 text-display-xs-bold-18 card-title m-0">
+							Black Widow
+						</h5>
+						<p class="text-xs-12 text-color-placeholder card-text pb-3">
+							Action, Adventure, Sci-Fi
+						</p>
+						<a href="#" class="d-grid btn btn-outline-primary">Details</a>
+					</div>
+				</div>
+				<div class="scroll card mr-4">
+					<div class="card-body">
+						<img
+							src="https://upload.wikimedia.org/wikipedia/en/a/a7/The_Witches_%28Official_2020_Film_Poster%29.png"
+							class="img-fluid img-resize"
+						/>
+						<h5 class="pt-3 pb-2 text-display-xs-bold-18 card-title m-0">
+							The Witches
+						</h5>
+						<p class="text-xs-12 text-color-placeholder card-text pb-3">
+							Adventure, Comedy, Family
+						</p>
+						<a href="#" class="d-grid btn btn-outline-primary">Details</a>
+					</div>
+				</div>
+				<div class="scroll card mr-4">
+					<div class="card-body">
+						<img
+							src="https://m.media-amazon.com/images/M/MV5BYzg0NGM2NjAtNmIxOC00MDJmLTg5ZmYtYzM0MTE4NWE2NzlhXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg"
+							class="img-fluid img-resize"
+						/>
+						<h5 class="pt-3 pb-2 text-display-xs-bold-18 card-title m-0">
+							Tenet
+						</h5>
+						<p class="text-xs-12 text-color-placeholder card-text pb-3">
+							Action, Sci-Fi
+						</p>
+						<a href="#" class="d-grid btn btn-outline-primary">Details</a>
+					</div>
+				</div>
+				<div class="scroll card mr-4">
+					<div class="card-body">
+						<img
+							src="https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_.jpg"
+							class="img-fluid img-resize"
+						/>
+						<h5 class="pt-3 pb-2 text-display-xs-bold-18 card-title m-0">
+							Black Panther
+						</h5>
+						<p class="text-xs-12 text-color-placeholder card-text pb-3">
+							Action, Adventure, Sci-Fi
+						</p>
+						<a href="#" class="d-grid btn btn-outline-primary">Details</a>
+					</div>
+				</div>
+				<div class="scroll card mr-4">
+					<div class="card-body">
+						<img
+							src="https://images-na.ssl-images-amazon.com/images/I/814V1XJaoAL._AC_SL1500_.jpg"
+							class="img-fluid img-resize"
+						/>
+						<h5 class="pt-3 pb-2 text-display-xs-bold-18 card-title m-0">
+							Mission Impossible
+						</h5>
+						<p class="text-xs-12 text-color-placeholder card-text pb-3">
+							Action, Adventure, Sci-Fi
+						</p>
+						<a href="#" class="d-grid btn btn-outline-primary">Details</a>
+					</div>
+				</div>
+				<div class="scroll card mr-4">
+					<div class="card-body">
+						<img
+							src="https://m.media-amazon.com/images/M/MV5BYzg0NGM2NjAtNmIxOC00MDJmLTg5ZmYtYzM0MTE4NWE2NzlhXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg"
+							class="img-fluid img-resize"
+						/>
+						<h5 class="pt-3 pb-2 text-display-xs-bold-18 card-title m-0">
+							Tenet
+						</h5>
+						<p class="text-xs-12 text-color-placeholder card-text pb-3">
+							Action, Sci-Fi
+						</p>
+						<a href="#" class="d-grid btn btn-outline-primary">Details</a>
+					</div>
+				</div>
+				<div class="scroll card mr-4">
+					<div class="card-body">
+						<img
+							src="https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_.jpg"
+							class="img-fluid img-resize"
+						/>
+						<h5 class="pt-3 pb-2 text-display-xs-bold-18 card-title m-0">
+							Black Panther
+						</h5>
+						<p class="text-xs-12 text-color-placeholder card-text pb-3">
+							Action, Adventure, Sci-Fi
+						</p>
+						<a href="#" class="d-grid btn btn-outline-primary">Details</a>
+					</div>
+				</div>
+				<div class="scroll card mr-4">
+					<div class="card-body">
+						<img
+							src="https://images-na.ssl-images-amazon.com/images/I/814V1XJaoAL._AC_SL1500_.jpg"
+							class="img-fluid img-resize"
+						/>
+						<h5 class="pt-3 pb-2 text-display-xs-bold-18 card-title m-0">
+							Mission Impossible
+						</h5>
+						<p class="text-xs-12 text-color-placeholder card-text pb-3">
+							Action, Adventure, Sci-Fi
+						</p>
+						<a href="#" class="d-grid btn btn-outline-primary">Details</a>
+					</div>
+				</div>
+			</div>
+			<!-- Upcoming movie end -->
+			<!-- Scroll 3 page end -->
+
+			<!-- Scroll 4 page begin -->
+			<!-- Email Subscribe -->
+			<div style="padding: 100px 0">
+				<div class="card align-items-center text-center shadow border-0">
+					<div class="card-body" style="max-width: 500px">
+						<p class="card-title text-muted fs-4 m-0">Be the vanguard of the</p>
+						<h5 class="card-text text-primary display-5">Moviegoers</h5>
+						<div class="row justify-content-between">
+							<div class="col-md-9 col-sm-12 pt-3">
+								<input
+									class="form-control me-2 py-3"
+									type="search"
+									placeholder="Type your email"
+									aria-label="Search"
+								/>
+							</div>
+							<div class="col-md-3 col-sm-12 d-grid pt-3">
+								<button class="btn btn-primary py-3" type="submit">
+									Join now
+								</button>
+							</div>
+						</div>
+						<p class="text-muted text-muted pt-3">
+							By joining you as a Tickitz member, <br />
+							we will always send you the latest updates via email .
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- Scroll 4 page end -->
+
+			<!-- Scroll 5 page begin -->
+			<footer>
+				<div class="container py-5">
+					<div class="row py-3 g-5">
+						<div class="col-lg-4 col-md-6 mb-lg-0">
+							<img src="../../assets/tickitz-purple.png" width="170px" />
+							<p class="text-sm text-color-label mt-3">
+								Stop waiting in line. Buy tickets conveniently, watch movies
+								quietly.
+							</p>
+						</div>
+						<div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+							<h6 class="text-display-xs-bold-16 mb-4">Explore</h6>
+							<ul class="list-unstyled mb-0">
+								<li class="mb-2">
+									<a href="#" class="text-muted">Cinemas</a>
+								</li>
+								<li class="mb-2">
+									<a href="#" class="text-muted">Movies List</a>
+								</li>
+								<li class="mb-2">
+									<a href="#" class="text-muted">My Ticket</a>
+								</li>
+								<li class="mb-2">
+									<a href="#" class="text-muted">Notification</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+							<h6 class="text-display-xs-bold-16 mb-4">Our Sponsor</h6>
+							<ul class="list-unstyled mb-0">
+								<li class="mb-3">
+									<a href="#" class="text-muted"
+										><img src="../../assets/ebu.png" height="44px"
+									/></a>
+								</li>
+								<li class="mb-3">
+									<a href="#" class="text-muted"
+										><img src="../../assets/cineone.png" height="27px"
+									/></a>
+								</li>
+								<li class="mb-3">
+									<a href="#" class="text-muted"
+										><img src="../../assets/hiflix.png" height="25px"
+									/></a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+							<h6 class="text-display-xs-bold-16 mb-4">Follow us</h6>
+							<ul class="list-unstyled mb-0">
+								<li class="mb-4">
+									<div class="float-left mr-3">
+										<img
+											src="../../assets/facebook.svg"
+											class="img-fluid"
+											height="20px"
+										/>
+									</div>
+									<div class="d-none d-lg-block">
+										<a href="#" class="text-muted">Tickitz Cinema id</a>
+									</div>
+								</li>
+								<li class="mb-4">
+									<div class="float-left mr-3">
+										<img
+											src="../../assets/instagram.svg"
+											class="img-fluid"
+											height="20px"
+										/>
+									</div>
+									<div class="d-none d-lg-block">
+										<a href="#" class="text-muted">tickitz.id</a>
+									</div>
+								</li>
+								<li class="mb-4">
+									<div class="float-left mr-3">
+										<img
+											src="../../assets/twitter.svg"
+											class="img-fluid"
+											height="20px"
+										/>
+									</div>
+									<div class="d-none d-lg-block">
+										<a href="#" class="text-muted">tickitz.id</a>
+									</div>
+								</li>
+								<li class="mb-4">
+									<div class="float-left mr-3">
+										<img
+											src="../../assets/youtube.svg"
+											class="img-fluid"
+											height="20px"
+										/>
+									</div>
+									<div class="d-none d-lg-block">
+										<a href="#" class="text-muted">Tickitz Cinema id</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="py-2">
+					<div class="container text-center">
+						<p class="text-muted mb-0 py-2">
+							&copy; 2020 Tickitz. All Rights Reserved.
+						</p>
+					</div>
+				</div>
+			</footer>
+			<!-- Scroll 5 page end -->
+			<!-- Content end -->
+		</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
